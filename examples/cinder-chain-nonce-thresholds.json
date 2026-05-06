@@ -1,0 +1,17 @@
+{
+  "repo": "cinder-chain-nonce-mark",
+  "thresholds": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 4,
+    "ship": 169,
+    "watch": 109
+  },
+  "terms": [
+    "event finality",
+    "nonce pressure",
+    "settlement risk",
+    "proof depth"
+  ]
+}

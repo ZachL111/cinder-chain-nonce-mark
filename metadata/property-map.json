@@ -1,0 +1,28 @@
+{
+  "repo": "cinder-chain-nonce-mark",
+  "language": "C",
+  "category": "Blockchain tooling",
+  "goal": "Implement a C blockchain tooling project for nonce incremental indexing, using append-only fixtures and checkpoint recovery checks.",
+  "weights": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 4
+  },
+  "thresholds": {
+    "ship": 169,
+    "watch": 109
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
