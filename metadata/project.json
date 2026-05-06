@@ -1,0 +1,32 @@
+{
+  "index": 544,
+  "phase": 2,
+  "batch": 61,
+  "name": "cinder-chain-nonce-mark",
+  "planned_name": "cinder-chain-nonce-mark",
+  "language": "C",
+  "category": "Blockchain tooling",
+  "goal": "Implement a C blockchain tooling project for nonce incremental indexing, using append-only fixtures and checkpoint recovery checks.",
+  "repository_url": "https://github.com/ZachL111/cinder-chain-nonce-mark",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 163,
+    "risk_penalty": 6,
+    "latency_penalty": 3,
+    "weight_bonus": 3,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
